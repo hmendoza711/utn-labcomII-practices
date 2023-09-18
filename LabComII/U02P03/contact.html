@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <link rel="stylesheet" href="css/index.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      table {
+        width: 10%;
+      }
+
+      th,
+      td {
+        padding: 1px;
+      }
+
+      th {
+        text-align: left;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Encabezado -->
+    <header>
+      <h1>JavaScript</h1>
+    </header>
+
+    <div class="container">
+      <!-- Navegación / contenedor izquierdo -->
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="multimedia.html">Multimedia</a></li>
+          <li><a href="contact.html">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <!-- Contenedor principal -->
+      <main>
+        <form action="#" method="post">
+          <table>
+            <tr>
+              <th><label for="nombre">Nombre:</label></th>
+              <td>
+                <input
+                  type="text"
+                  id="nombre"
+                  name="nombre"
+                  pattern="[A-Za-záéíóúÁÉÍÓÚñÑ\s]+"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <th><label for="email">Email:</label></th>
+              <td><input type="email" id="email" name="email" required /></td>
+            </tr>
+            <tr>
+              <th><label for="edad">Edad:</label></th>
+              <td><input type="number" id="edad" name="edad" /></td>
+            </tr>
+            
+            <tr>
+              <th><label for="color">Color preferido:</label></th>
+              <td><input type="color" id="color" name="color" /></td>
+            </tr>
+            <tr>
+              <th><label for="comentario">Comentario:</label></th>
+              <td>
+                <input type="comentario" id="comentario" name="comentario" />
+              </td>
+            </tr>
+          </table>
+          <br />
+          <input
+            type="submit"
+            value="Enviar"
+            style="margin-top: -100px; margin-right: 235px"
+          />
+        </form>
+      </main>
+
+      <!-- Contenedor secundario / derecho -->
+      <div class="right">
+        <h2>Info</h2>
+        <p>
+          Lenguaje de programación web para interactividad y dinamismo en
+          sitios.
+        </p>
+      </div>
+    </div>
+
+    <!-- Pie de Página-->
+    <footer>
+      <p style="font-size: 12px;"></pstyle>>&copy; Copyright labcomII.com</p>
+    </footer>
+  </body>
+</html>
